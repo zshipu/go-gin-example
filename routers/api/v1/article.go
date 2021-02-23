@@ -3,18 +3,18 @@ package v1
 import (
 	"net/http"
 
-	"github.com/unknwon/com"
 	"github.com/astaxie/beego/validation"
 	"github.com/boombuler/barcode/qr"
 	"github.com/gin-gonic/gin"
+	"github.com/unknwon/com"
 
-	"github.com/EDDYCJY/go-gin-example/pkg/app"
-	"github.com/EDDYCJY/go-gin-example/pkg/e"
-	"github.com/EDDYCJY/go-gin-example/pkg/qrcode"
-	"github.com/EDDYCJY/go-gin-example/pkg/setting"
-	"github.com/EDDYCJY/go-gin-example/pkg/util"
-	"github.com/EDDYCJY/go-gin-example/service/article_service"
-	"github.com/EDDYCJY/go-gin-example/service/tag_service"
+	"github.com/zshipu/go-gin-example/pkg/app"
+	"github.com/zshipu/go-gin-example/pkg/e"
+	"github.com/zshipu/go-gin-example/pkg/qrcode"
+	"github.com/zshipu/go-gin-example/pkg/setting"
+	"github.com/zshipu/go-gin-example/pkg/util"
+	"github.com/zshipu/go-gin-example/service/article_service"
+	"github.com/zshipu/go-gin-example/service/tag_service"
 )
 
 // @Summary Get a single article
@@ -288,7 +288,7 @@ func DeleteArticle(c *gin.Context) {
 }
 
 const (
-	QRCODE_URL = "https://github.com/EDDYCJY/blog#gin%E7%B3%BB%E5%88%97%E7%9B%AE%E5%BD%95"
+	QRCODE_URL = "https://github.com/zshipu/blog#gin%E7%B3%BB%E5%88%97%E7%9B%AE%E5%BD%95"
 )
 
 func GenerateArticlePoster(c *gin.Context) {
